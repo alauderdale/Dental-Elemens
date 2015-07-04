@@ -78,7 +78,11 @@ nav.sliding-menu {
     ul.menu-social{
         li{
             a{
+                @include transition-duration(.2s);
                 color:$gray-color;
+                &:hover{
+                    color:$primary-color;
+                }
             }
         }
     }
