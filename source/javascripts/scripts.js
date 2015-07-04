@@ -1,0 +1,61 @@
+$(document).ready(function(){
+
+	 //fancybox
+	$('.fancybox').fancybox({
+        padding: 0
+    });
+	
+	$('.fb-video').fancybox({
+        padding: 0,
+        width: "100%",
+        height: 870,
+        autoSize: false,
+        helpers: {
+            media: {}
+        }
+   });
+
+	$('.tooltip-up').tooltip({html:true});
+
+
+//smooth scroll
+
+	$(function() {
+		  $('a[href*=#ss]:not([href=#])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html,body').animate({
+		          scrollTop: target.offset().top-57
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+
+	////colappse menu
+
+
+	 $(window).scroll(function(){
+     var divOffset = $('section :first-of-type').offset();
+     if(window.scrollY > divOffset.top ){
+        $('.main-nav').addClass('scrolled-nav');
+     }
+     if(window.scrollY < divOffset.top){
+        $('.main-nav').removeClass('scrolled-nav');
+     }
+    });
+
+
+
+   //slider
+
+
+
+
+
+
+});

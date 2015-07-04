@@ -1,0 +1,8 @@
+a{
+	color:$primary-color;
+	&:hover{
+		color:tint($primary-color,50%);
+		text-decoration:none;
+	}
+}
+

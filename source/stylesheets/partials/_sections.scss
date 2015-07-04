@@ -1,0 +1,16 @@
+//sections
+
+
+section{
+  padding:$baseline*3 0;
+  &.invert-section{
+    background-color:$primary-color;
+    @extend %white_text;
+  }
+  &.off-white{
+    background-color:$off-white-bg-color;
+  }
+}
+
+
+
