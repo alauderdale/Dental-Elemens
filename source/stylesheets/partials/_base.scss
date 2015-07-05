@@ -24,8 +24,8 @@ body{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   zoom:1;
-  font-family:'open_sansregular', Helvetica, Arial, sans-serif;
-  background-color:white;
+  font-family:'gotham-bookgotham-book', Helvetica, Arial, sans-serif;
+  background-color:$off-white-bg-color;
   position: relative;
 }
 
@@ -61,7 +61,10 @@ img{
 //backgrounds
 
 .bg-cover{
-  background: no-repeat center center fixed; 
+  background-repeat: no-repeat;
+  background-attatchment:scroll; 
+  background-position-x:center;
+  background-position-y:top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

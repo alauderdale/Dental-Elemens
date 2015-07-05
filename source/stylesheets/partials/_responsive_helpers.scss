@@ -10,6 +10,14 @@
 
 }
 
+.text-center-sm{
+
+  @include breakpoint(sm) {
+    text-align:center;
+  }
+
+}
+
 .no-padding-md{
 
   @include breakpoint(md) {

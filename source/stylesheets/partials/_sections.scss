@@ -3,6 +3,10 @@
 
 section{
   padding:$baseline*3 0;
+  background:white;
+  &.hero{
+  	  padding:$baseline*1.5 0;
+  }
   &.invert-section{
     background-color:$primary-color;
     @extend %white_text;
