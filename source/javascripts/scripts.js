@@ -53,9 +53,9 @@ $(document).ready(function(){
 
 	 //accordian
 
-	$( '#employee-accordion .panel' ).click(function() {
-  	$(this).siblings().removeClass('shadow');
-  	$(this).toggleClass('shadow');
+	$( '#employee-accordion .panel a' ).click(function() {
+  	$(this).closest('.panel').siblings().removeClass('shadow');
+  	$(this).closest('.panel').toggleClass('shadow');
 	});
 
 
