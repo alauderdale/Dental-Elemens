@@ -1,5 +1,10 @@
 a{
 	color:$primary-color;
+	text-decoration:none;
+	&:active, &:focus{
+		color:$primary-color;
+		text-decoration:none;
+	}
 	&:hover{
 		color:tint($primary-color,50%);
 		text-decoration:none;

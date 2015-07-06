@@ -299,31 +299,14 @@ p{
     margin: auto;
     background: #eaebed;
   }
-}
-
-
-blockquote{
-  border-left-color:tint($tertiary-color,70%);
-  p{
-    font-family:$bold-font-name;
-    font-size:1.5em;
-    margin-bottom:$baseline/2;
-    line-height:1.2em;
-    color:$dark-text-color;
-  }
-  footer{
-    color:$text-color;
-    cite{
-      color:$light-gray-color;
+  &.heading-bordered-left{
+    &:before{
+       right:auto;   
     }
   }
 }
 
 
-.signature{
-  font-family:$light-font-name;
-  font-size:.8em;
-}
 
 
 
@@ -332,10 +315,11 @@ blockquote{
 }
 
 blockquote{
-  font-family:$thin-font-name;
+  font-family:$light-font-name;
   font-size:1.3em;
-  line-height:1.5em;
+  line-height:1.3em;
   border:none;
+  padding-left:0;
   footer{
     margin-top:$baseline;
     font-family:$regular-font-name;

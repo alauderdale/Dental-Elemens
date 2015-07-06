@@ -1,0 +1,35 @@
+.accordian-default{
+	.panel{
+		margin:0;
+		border-bottom:none;
+		border-color:$border-color;
+		@include transition-duration(.2s);
+		&.shadow{
+			box-shadow:0 0 20px rgba(0,0,0,.15);
+	  float: left;
+	  width: 100%;
+	  display: inline-block;
+		}
+		.panel-heading{
+			background:white;
+			border:none;
+			padding:0;
+			a{
+				padding:$baseline/1.5 0;
+				display:block;
+				@include transition-duration(.2s);
+			}
+		}
+		.in{
+			background:white;
+			border-bottom:1px solid $border-color;
+			float: left;
+			width: 100%
+		}
+	}
+	
+}
+
+.panel-group .panel + .panel{
+	margin-top:0!important;
+}

@@ -51,7 +51,12 @@ $(document).ready(function(){
 
 
 
-   //slider
+	 //accordian
+
+	$( '#employee-accordion .panel' ).click(function() {
+  	$(this).siblings().removeClass('shadow');
+  	$(this).toggleClass('shadow');
+	});
 
 
 

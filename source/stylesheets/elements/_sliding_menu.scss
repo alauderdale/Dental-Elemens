@@ -63,6 +63,7 @@ nav.sliding-menu {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     padding:20px 40px;
+    padding-left:0;
     .nav-toggler {
         float: right;
         &.close-menu{
@@ -109,6 +110,9 @@ nav.sliding-menu {
         letter-spacing:1px;
         color:$gray-color;
     }
+    .nav-padding-left{
+        padding-left:40px;
+    }
     ul.main-links{
         margin-top:$baseline;
         li{
@@ -116,14 +120,21 @@ nav.sliding-menu {
             font-size:.8em;
             padding-left:0px;
             letter-spacing:1px;
+            &.active{
+                a{
+                    color:$primary-color;
+                    border-left:3px solid $primary-color;
+                }
+            }
             &.section-header{
                 font-family:$medium-font-name;
                 color:$light-gray-color;
                 text-transform:uppercase;
                 letter-spacing:1px;
+                padding-left:40px;
             }
             a{
-                padding-left:0;
+                padding-left:40px;
                 padding-bottom:0;
                 transition-duration:(.3s);
                 color:$text-color;

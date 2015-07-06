@@ -1,0 +1,19 @@
+#employee-accordion.panel-group.accordian-default{"aria-multiselectable" => "true", :role => "tablist"}
+  -6.times do |i| 
+    .panel.panel-default
+      .panel-heading{:role => "tab"}
+        .container
+          .row
+            .col-lg-12
+              %a.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "false", "data-parent" => "#employee-accordion", "data-toggle" => "collapse", :href => "#collapse-#{i}"}
+                %h5.no-margin-bottom
+                  HYGIENISTS
+      .clearfix
+      .panel-collapse.collapse{ :role => "tabpanel", :id=>"collapse-#{i}"}
+        .panel-body
+          .container
+            .row
+              -3.times do
+                .col-md-4
+                  %p
+                    Seeking full stack senior Java engineer who wants to be a super hero.

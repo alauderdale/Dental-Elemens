@@ -35,7 +35,8 @@ body{
 
 hr {
   border-color:$border-color;
-
+  margin-top:$baseline*2;
+  margin-bottom:$baseline*2;
 }
 
 
@@ -103,16 +104,16 @@ img{
 
 //borders
 .border-top{
-  border-top:1px solid $gray-color;
+  border-top:1px solid $border-color;
 }
 .border-right{
-  border-right:1px solid $gray-color;
+  border-right:1px solid $border-color;
 }
 .border-bottom{
-  border-bottom:1px solid $gray-color;
+  border-bottom:1px solid $border-color;
 }
 .border-left{
-  border-left:1px solid $gray-color;
+  border-left:1px solid $border-color;
 }
 
 //dividers

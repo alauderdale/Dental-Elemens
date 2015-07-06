@@ -1,5 +1,7 @@
 footer{
 	&.global-footer{
+		display:inline-block;
+		width: 100%;
 		section{
 					background-color:$off-white-bg-color;
 		}
