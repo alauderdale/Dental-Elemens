@@ -9,15 +9,17 @@
                 Dentists
     .clearfix
     .panel-collapse.collapse{ :role => "tabpanel", :id=>"collapse-d"}
-      .panel-body
+      .panel-body.therman
         .container
           .row
-            .col-sm-4
+            .col-sm-7
               %h4.thin-font-name.quarter-margin-bottom
                 David R Thurman, DDS
               %h6.bold-font-name
                 %a{:href=>"mailto:michael@dentalelements.com"}
                   david@dentalelements.com
+              =partial"therman_tab"
+            .col-sm-5
   -6.times do |i| 
     .panel.panel-default
       .panel-heading{:role => "tab"}

@@ -1,0 +1,45 @@
+%div
+  %ul.nav.nav-tabs{:role => "tablist"}
+    %li.active
+      %a{"aria-controls" => "home", "data-toggle" => "tab", :href => "#bio", :role => "tab"} 
+        Bio
+    %li
+      %a{"aria-controls" => "profile", "data-toggle" => "tab", :href => "#pro", :role => "tab"} 
+        PROFESSIONAL AFFILIATIONS
+  / Tab panes
+  .tab-content
+    #bio.tab-pane.active.fade.in{:role => "tabpanel"}
+      %p
+        Creating a beautiful smile requires both technical excellence and an artistic eye. Dr. David R Thurman, DDS combines both disciplines to produce a unique result based on your individual characteristics and needs.
+      %p
+        David’s commitment to excellence includes participation in numerous hours of continuing education courses related to dental implants, cutting edge technology and advanced dental techniques.
+      %p
+        Dr. Thurman was born and raised in Montana. He received his Doctor of Dental Surgery degree from The Ohio State University – College of Dentistry in 2007 and has dedicated his professional life to providing his patients with outstanding dental care.
+      %p
+        Dr. Thurman lives in beautiful Denver, Colorado where he enjoys spending time with friends, exploring the nearby Rocky Mountains, road biking and rooting for local sports teams.
+    #pro.tab-pane.fade{:role => "tabpanel"}
+      %ul.list-unstyled
+        %li
+          %a{:href=>"#"}
+            American Dental Association
+        %li
+          %a{:href=>"#"}
+            Colorado Dental Association
+        %li
+          %a{:href=>"#"}
+            Metropolitan Denver Dental Society
+        %li
+          %a{:href=>"#"}
+            CEREC Mile High Study Club
+        %li
+          %a{:href=>"#"}
+            Denver Implant Study Club
+        %li
+          %a{:href=>"#"}
+            Summit Dental Implant Study Club
+        %li
+          %a{:href=>"#"}
+            The Dawson Academy
+        %li
+          %a{:href=>"#"}
+            DOCS Education

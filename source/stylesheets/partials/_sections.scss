@@ -14,6 +14,10 @@ section{
   &.off-white{
     background-color:$off-white-bg-color;
   }
+  &.sign-up{
+    background:$primary-color url(../images/sign_up_bg.png) center center scroll no-repeat;
+    @include background-size(cover);
+  }
 }
 
 
