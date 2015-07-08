@@ -2,7 +2,14 @@ $(document).ready(function(){
 
 	 //fancybox
 	$('.fancybox').fancybox({
-        padding: 0
+				padding: 20,
+		    helpers : {
+		        overlay : {
+		            css : {
+		                'background' : 'rgba(255, 255, 255, 0.80)'
+		            }
+		        }
+		    }
     });
 	
 	$('.fb-video').fancybox({
@@ -53,7 +60,7 @@ $(document).ready(function(){
 
 	 //accordian
 
-	$( '#employee-accordion .panel a' ).click(function() {
+	$( '#employee-accordion .panel a.open' ).click(function() {
   	$(this).closest('.panel').siblings().removeClass('shadow');
   	$(this).closest('.panel').toggleClass('shadow');
 	});

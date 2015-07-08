@@ -1,11 +1,30 @@
 #employee-accordion.panel-group.accordian-default{"aria-multiselectable" => "true", :role => "tablist"}
+  .panel.panel-default
+    .panel-heading{:role => "tab"}
+      .container
+        .row
+          .col-lg-12
+            %a.collapsed.open{"aria-controls" => "collapse-d", "aria-expanded" => "false", "data-parent" => "#employee-accordion", "data-toggle" => "collapse", :href => "#collapse-d"}
+              %h5.no-margin-bottom
+                Dentists
+    .clearfix
+    .panel-collapse.collapse{ :role => "tabpanel", :id=>"collapse-d"}
+      .panel-body
+        .container
+          .row
+            .col-sm-4
+              %h4.thin-font-name.quarter-margin-bottom
+                David R Thurman, DDS
+              %h6.bold-font-name
+                %a{:href=>"mailto:michael@dentalelements.com"}
+                  david@dentalelements.com
   -6.times do |i| 
     .panel.panel-default
       .panel-heading{:role => "tab"}
         .container
           .row
             .col-lg-12
-              %a.collapsed{"aria-controls" => "collapse-#{i}", "aria-expanded" => "false", "data-parent" => "#employee-accordion", "data-toggle" => "collapse", :href => "#collapse-#{i}"}
+              %a.collapsed.open{"aria-controls" => "collapse-#{i}", "aria-expanded" => "false", "data-parent" => "#employee-accordion", "data-toggle" => "collapse", :href => "#collapse-#{i}"}
                 %h5.no-margin-bottom
                   HYGIENISTS
       .clearfix
@@ -14,6 +33,11 @@
           .container
             .row
               -3.times do
-                .col-md-4
-                  %p
-                    Seeking full stack senior Java engineer who wants to be a super hero.
+                .col-sm-4
+                  %h4.thin-font-name
+                    Michael Montoya, EDDA
+                  %a.employee-more.fancybox{:href=>"about/modal_employee", :class=>"fancybox.ajax"}
+                    %img.img-circle.margin-bottom.img-responsive{:src=>"images/employee.jpg", :width=>"240px"}
+                  %h6.bold-font-name
+                    %a{:href=>"mailto:michael@dentalelements.com"}
+                      michael@dentalelements.com
