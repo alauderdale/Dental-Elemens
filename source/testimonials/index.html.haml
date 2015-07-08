@@ -1,0 +1,26 @@
+%section.invert-section.hero.bg-cover{:style=>"background-image:url(images/testimonials_banner.png);"}
+	.container
+		.row
+			.col-lg-12
+				%h1
+					testimonials
+%section
+	.container
+		.row
+			.col-lg-12
+				.masonry-grid.testimonial-grid
+					.grid-sizer
+					.gutter-sizer
+					-120.times do
+						.grid-item.testimonial
+							%h2.dark-text-color
+								Last Thursday I was eating breakfast
+							%blockquote
+								=lorem.paragraphs 1
+							%footer
+								\-
+								=lorem.name
+							
+
+
+=partial"shared/sign_up_banner"

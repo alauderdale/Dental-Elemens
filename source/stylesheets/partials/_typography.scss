@@ -231,7 +231,8 @@ p{
     line-height:1.6em;
   }
   &.lead{
-    line-height:1.8em;
+    font-size:1.2em;
+    line-height:1.6em;
   }
 }
 
@@ -240,8 +241,8 @@ p  {font-size: 1em;  }
 h1 { font-size: 3.9em; }
 h2 { font-size: 2em; }
 h3 { font-size: 2em;}
-h4 { font-size: 1.3em; }
-h5 { font-size: .8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: .7em; }
 h6 { font-size: .8em;}
 
 
@@ -249,11 +250,13 @@ h6 { font-size: .8em;}
 h1{
   font-family:$thin-font-name;
   line-height:1.2em;
+  color:$dark-text-color;
 }
 
 h2{
   font-family:$thin-font-name;
-  line-height:1.6em;
+  line-height:1.2em;
+  color:$dark-text-color;
 }
 
 h3{
@@ -262,7 +265,8 @@ h3{
 }
 
 h4{
-  font-family:$regular-font-name;
+  font-family:$light-font-name;
+  line-height:1.4em;
 }
 
 h5{
@@ -286,7 +290,7 @@ p{
 
 .heading-bordered{
   padding-bottom:18px;
-  margin-bottom:$baseline*3;
+  margin-bottom:$baseline*2.6;
   position:relative;
   &:before{
     content: "";
@@ -315,11 +319,12 @@ p{
 }
 
 blockquote{
-  font-family:$light-font-name;
+  font-family:$thin-font-name;
   font-size:1.3em;
   line-height:1.5em;
   border:none;
   padding-left:0;
+  color:$dark-text-color;
   footer{
     margin-top:$baseline;
     font-family:$regular-font-name;

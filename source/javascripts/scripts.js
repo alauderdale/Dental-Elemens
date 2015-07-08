@@ -11,6 +11,18 @@ $(document).ready(function(){
 		        }
 		    }
     });
+
+	$('.fancybox-image').fancybox({
+				padding: 0,
+				arrows: true,
+		    helpers : {
+		        overlay : {
+		            css : {
+		                'background' : 'rgba(255, 255, 255, 0.80)'
+		            }
+		        }
+		    }
+    });
 	
 	$('.fb-video').fancybox({
         padding: 0,
@@ -65,9 +77,52 @@ $(document).ready(function(){
   	$(this).closest('.panel').toggleClass('shadow');
 	});
 
+	//map ui
+
+		$( 'a.map-toggle' ).click(function() {
+
+		$('.map-wrap').toggleClass('map-show');
 
 
 
+
+	});
 
 
 });
+
+
+
+$(window).load(function(){ 
+
+
+	//masonry grid
+
+	$('.masonry-grid').isotope({
+	  itemSelector: '.grid-item',
+	  percentPosition: true,
+	  masonry: {
+	    columnWidth: '.grid-sizer',
+	    gutter: '.gutter-sizer'
+	  }
+	});
+
+
+	 //masonry filter
+	$( 'ul.filter-nav li:first-of-type ' ).addClass('active-link');
+
+
+	$( 'a.filter-button' ).click(function() {
+
+		$( 'ul.filter-nav li ' ).removeClass('active-link');
+		$(this).closest('li').addClass('active-link');
+
+		var id = '.' + $(this).attr('id')
+  	$('.masonry-grid').isotope({ filter: id });
+
+
+
+	});
+
+
+})

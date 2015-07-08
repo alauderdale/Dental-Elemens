@@ -2,20 +2,14 @@
 "title": "blog"
 ;;;
 
-:css
-	.main-nav{
-		background-color:rgba(0,0,0,.5);
-	}
 
-%section.single-header-section{:style=>"background: #0F3B4D url(/images/header_single.png) no-repeat scroll center top; "}
-	.title-wrapper
-		.container
-			.row
-				.col-lg-12
-					%h3
-						Article Title
-					%p
-						posted on march 31, 2015 by john doe in ux
+
+%section.invert-section.hero.bg-cover{:style=>"background-image:url(images/blog_banner.png);"}
+	.container
+		.row
+			.col-md-12
+				%h1
+					elements
 
 %section.blog.blog-single
 	.container
@@ -37,15 +31,10 @@
 					.col-md-2
 			.col-md-1.col-md-pull-11
 				.social-btn-group
-					.fix-social.affix{"data-spy"=>"affix", "data-offset-top"=>"350"}
-						%h6.text-center.extra-light-text-color
-							SHARE
+					.fix-social.affix{"data-spy"=>"affix", "data-offset-top"=>"210", "data-offset-bottom"=>"600"}
 						.btn-group.btn-group-vertical{"aria-label" => "...", :role => "group"}
 							%a.btn.btn-default{:href => "#"} 
 								F
 							%a.btn.btn-default{:href => "#"} 
 								L
-							%a.btn.btn-default{:href => "#"} 
-								I
-				
-=partial"shared/sign_up_panel"
+

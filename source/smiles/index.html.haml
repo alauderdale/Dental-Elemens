@@ -1,0 +1,65 @@
+%section.invert-section.hero.bg-cover{:style=>"background-image:url(images/smile_banner.png);"}
+	.container
+		.row
+			.col-lg-12
+				%h1
+					Smile Gallery
+%section.no-padding-bottom
+	.container
+		.row
+			.col-lg-12
+				%h5
+					Filters
+				%ul.filter-nav.list-inline
+					%li
+						%a.filter-button#all{:href=>"#",:onclick=>"return false;"}
+							All
+					%li
+						%a.filter-button#veneers{:href=>"#",:onclick=>"return false;"}
+							PORCELAIN VENEERS
+					%li
+						%a.filter-button#makeovers{:href=>"#",:onclick=>"return false;"}
+							SMILE MAKEOVERS
+					%li
+						%a.filter-button#orthodontics{:href=>"#",:onclick=>"return false;"}
+							INVISIBLE ORTHODONTICS
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				.masonry-grid
+					.grid-sizer
+					.gutter-sizer
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_1.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_1.png"}
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_2.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_2.png"}
+					.grid-item.makeovers.all
+						%a.fancybox-image{:href=>"images/smile_3.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_3.png"}
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_4.png", :rel=>"item2-gallery"}
+							%img.full-width{:src=>"images/smile_4.png"}
+					.grid-item.orthodontics.all
+						%a.fancybox-image{:href=>"images/smile_5.png", :rel=>"item2-gallery"}
+							%img.full-width{:src=>"images/smile_5.png"}
+					.grid-item.makeovers.all
+						%a.fancybox-image{:href=>"images/smile_1.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_1.png"}
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_2.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_2.png"}
+					.grid-item.orthodontics.all
+						%a.fancybox-image{:href=>"images/smile_3.png", :rel=>"item1-gallery"}
+							%img.full-width{:src=>"images/smile_3.png"}
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_4.png", :rel=>"office-gallery"}
+							%item2.full-width{:src=>"images/smile_4.png"}
+					.grid-item.veneers.all
+						%a.fancybox-image{:href=>"images/smile_5.png", :rel=>"item2-gallery"}
+							%img.full-width{:src=>"images/smile_5.png"}
+
+
+=partial"shared/sign_up_banner"

@@ -1,0 +1,104 @@
+.map-wrap
+	%section.padding-top.padding-bottom.contact-map-container
+		.container
+			.row
+				.col-lg-12
+					%h1
+						contact
+			.row
+				.col-md-4.col-sm-6
+					.card
+						%h4
+							We are ready to 
+							%br
+							make you smile! 
+						%h5.heading-bordered.heading-bordered-left.half-margin-bottom
+							Phone
+						%h4
+							303-309-4093
+						%h5.heading-bordered.heading-bordered-left.half-margin-bottom
+							Address
+						%h4.no-margin-bottom
+							Dental Elements
+							%br
+							1781 15th Street
+							%br
+							Denver, CO 80202
+						%p.quarter-margin-top
+							%a{:href=>"https://www.google.com/maps/place/Dental+Elements/@39.7509453,-105.0055967,17z/data=!4m2!3m1!1s0x876c78c1584a580d:0x46529881d8c6414f!6m1!1e1"}
+								Get Directions
+							%span.extra-light-text-color
+								\|
+							%a.map-toggle{:href=>"#", :onclick=>"return false;"}
+								Map
+						%h5.heading-bordered.heading-bordered-left.half-margin-bottom
+							Email
+						%a{:href=>"mailto:smile@dentalelements.com"}
+							smile@dentalelements.com
+				.col-md-4.col-sm-6
+	.google-map
+		%iframe{:allowfullscreen => "", :frameborder => "0", :height => "1000", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.497133057302!2d-105.005596718277!3d39.75094533607941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78c1584a580d%3A0x46529881d8c6414f!2sDental+Elements!5e0!3m2!1sen!2sus!4v1436377586924", :style => "border:0;", :width => "100%"}
+%section
+	.container
+		.row
+			.col-lg-7.col-md-6.col-sm-7
+				.padded
+					%h5.heading-bordered.heading-bordered-left
+						Location
+					%p.lead.light-font-name
+						We are conveniently located in the heart of Lower Downtown Denver between Union Station and the Pepsi Center. We are only steps away from 
+						%a{:href=>"#"}
+							RTD’s Light Rail, Bus 
+						and 
+						%a{:href=>"#"}
+							FREE MallRide. 
+						There are also many parking meters and garages nearby
+			.col-lg-5.col-md-6.col-sm-5
+				.padded
+					%h5.heading-bordered.heading-bordered-left
+						Office Hours
+					%p.lead.light-font-name
+						Monday – Thursday | 7 AM – 5 PM
+						%br
+						%span.dark-text-color
+							\- after hours appointment only -
+%section.invert-section.contact-form
+	.container
+		.row
+			.col-md-4
+				.padded.no-padding-bottom
+					%h4
+						How Can We Help?
+					%p
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+					%p
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+			.col-md-8
+				.padded.no-padding-bottom
+					%form.form-horizontal
+						.form-group
+							.col-sm-6
+								%input.form-control.input-lg.half-margin-bottom{:placeholder => "Full Name"}
+							.col-sm-6
+								%input.form-control.input-lg.half-margin-bottom{:placeholder => "Phone"}
+						.form-group
+							.col-sm-6
+								%input.form-control.input-lg.half-margin-bottom{:placeholder => "Email"}
+							.col-sm-6
+								%select.form-control.input-lg.half-margin-bottom
+									%option
+										Option
+									%option
+										Option
+									%option
+										Option
+						.form-group
+							.col-sm-12
+								%textarea.form-control.input-lg.half-margin-bottom{:rows=>"6", :placeholder=>"tell us..."}
+						.form-group
+							.col-sm-9
+							.col-sm-3
+								%button.btn-primary.btn.btn-block
+									Send It
+
+

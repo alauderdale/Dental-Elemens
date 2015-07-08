@@ -106,7 +106,9 @@ ul.nav-pills{
 
 .accordian-default{
 	margin-bottom:0;
+	margin-bottom:10px;
 	.panel{
+		box-shadow:none;
 		margin:0;
 		border-bottom:none;
 		border-color:$border-color;
@@ -124,8 +126,9 @@ ul.nav-pills{
 			background:white;
 			border:none;
 			padding:0;
+			border-radius:0;
 			a{
-				padding:$baseline/1.5 0;
+				padding:$baseline 0;
 				display:block;
 				@include transition-duration(.2s);
 			}
@@ -242,3 +245,33 @@ ul.nav-tabs{
 		}
 	}
 }
+
+
+ul.filter-nav{
+	li{
+			text-transform:uppercase;
+			letter-spacing:1px;
+			font-family:$bold-font-name;
+			font-size:.7em;
+			&.active-link{
+				a{
+					box-shadow:inset 0 0 0 1px $primary-color;
+				}
+			}
+		a{
+			border-radius:3px;
+			display:block;
+			padding:$baseline/4 $baseline/2;
+			color:$light-gray-color;
+			margin-bottom:5px;
+			&:hover{
+				color:$primary-color;
+				background-color:#fafafa;
+			}
+		}
+	}
+}
+
+
+
+

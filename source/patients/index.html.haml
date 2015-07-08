@@ -1,0 +1,70 @@
+%section.invert-section.hero.bg-cover{:style=>"background-image:url(images/patient_banner.png);"}
+	.container
+		.row
+			.col-lg-12
+				%h1
+					Patient Library
+.nav-secondary
+	.container
+		.row
+			.col-lg-12
+				%ul
+					%li.active
+						%a{:href=>"#"}
+							PATIENT FORMS
+					%li
+						%a{:href=>"#"}
+							TREATMENT CONSENT FORMS
+					%li
+						%a{:href=>"#"}
+							HOME CARE INSTRUCTIONS
+					%li
+						%a{:href=>"#"}
+							PRODUCT INFORMATION
+					%li
+						%a{:href=>"#"}
+							ADDITIONAL RESOURCES
+%section.double-padding-top
+	.container
+		.row
+			.col-sm-3.no-padding-right
+				%ul.nav.nav-pills.nav-stacked.double-margin-bottom
+					%li
+						%a{:href => "#"} 
+							Overview
+					%li
+						%a{:href => "#"} 
+							Notice of Privacy Practices
+					%li
+						%a{:href => "#"} 
+							Financial Policy
+					%li.active
+						%a{:href => "#"} 
+							Payment Options
+					%li
+						%a{:href => "#"} 
+							Emergency Contact
+					%li
+						%a{:href => "#"} 
+							Health History
+					%li
+						%a{:href => "#"} 
+							Smile Evaluation
+			.col-sm-9.border-left
+				.padding-left.no-padding-left-sm
+					.alert.alert-info.double-margin-bottom
+						%p
+							%span.medium-font-name
+								Note
+							This notice describes how health information about you may be used and disclosed and how you can get access to this information. Please review it carefully. The privacy of your health information is important to us.
+					.clearfix
+					%h5.heading-bordered.heading-bordered-left
+						Notice of Privacy Practices
+					-4.times do
+						%h4
+							OUR LEGAL DUTY
+						%p
+							We are required by applicable federal and state law to maintain the privacy of your health information. We are also required to give you this Notice about our privacy practices, our legal duties, and your rights concerning your health information. We must follow the privacy practices that are described in this Notice while it is in effect. This Notice takes effect 1/1/2009, and will remain in effect until we replace it. We reserve the right to change our privacy practices and the terms of this Notice at any time, provided such changes are permitted by applicable law.
+						%hr
+
+=partial"shared/sign_up_banner"
