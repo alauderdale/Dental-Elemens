@@ -2,6 +2,9 @@ footer{
 	&.global-footer{
 		display:inline-block;
 		width: 100%;
+		a{
+			color:$gray-color;
+		}
 		section{
 					background-color:$off-white-bg-color;
 		}

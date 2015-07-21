@@ -242,7 +242,7 @@ h1 { font-size: 3.9em; }
 h2 { font-size: 2em; }
 h3 { font-size: 2em;}
 h4 { font-size: 1.4em; }
-h5 { font-size: .7em; }
+h5 { font-size: .9em; }
 h6 { font-size: .8em;}
 
 
@@ -290,7 +290,7 @@ p{
 
 .heading-bordered{
   padding-bottom:18px;
-  margin-bottom:$baseline*2.6;
+  margin-bottom:$baseline*1.2;
   position:relative;
   &:before{
     content: "";

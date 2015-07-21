@@ -2,12 +2,8 @@
 	%section.padding-top.padding-bottom.contact-map-container
 		.container
 			.row
-				.col-lg-12
-					%h1
-						contact
-			.row
-				.col-md-4.col-sm-6
-					.card
+				.col-md-12
+					.card.margin-auto{:style=>"width:300px;"}
 						%h4
 							We are ready to 
 							%br
@@ -25,17 +21,13 @@
 							%br
 							Denver, CO 80202
 						%p.quarter-margin-top
-							%a{:href=>"https://www.google.com/maps/place/Dental+Elements/@39.7509453,-105.0055967,17z/data=!4m2!3m1!1s0x876c78c1584a580d:0x46529881d8c6414f!6m1!1e1"}
+							%a{:href=>"https://www.google.com/maps/dir//Dental+Elements,+1781+15th+St,+Denver,+CO+80202/@39.7509453,-105.0055967,17z/data=!4m13!1m4!3m3!1s0x876c78c1584a580d:0x46529881d8c6414f!2sDental+Elements!3b1!4m7!1m0!1m5!1m1!1s0x876c78c1584a580d:0x46529881d8c6414f!2m2!1d-105.002539!2d39.751465", :target=>"_blank"}
 								Get Directions
-							%span.extra-light-text-color
-								\|
-							%a.map-toggle{:href=>"#", :onclick=>"return false;"}
-								Map
+							
 						%h5.heading-bordered.heading-bordered-left.half-margin-bottom
 							Email
 						%a{:href=>"mailto:smile@dentalelements.com"}
 							smile@dentalelements.com
-				.col-md-4.col-sm-6
 	.google-map
 		%iframe{:allowfullscreen => "", :frameborder => "0", :height => "1000", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.497133057302!2d-105.005596718277!3d39.75094533607941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78c1584a580d%3A0x46529881d8c6414f!2sDental+Elements!5e0!3m2!1sen!2sus!4v1436377586924", :style => "border:0;", :width => "100%"}
 %section
@@ -61,7 +53,7 @@
 						Monday – Thursday | 7 AM – 5 PM
 						%br
 						%span.dark-text-color
-							\- after hours appointment only -
+							\- after hours by appointment only -
 %section.invert-section.contact-form
 	.container
 		.row
@@ -70,7 +62,7 @@
 					%h4
 						How Can We Help?
 					%p
-						Fill out the form to contact our dental clinic, book an appointment or request more information. Call us today to learn more about our consultations Our receptionist will get back to you right away. 
+						Fill out the form to book an appointment, contact our dental office or request more information. Our receptionist will get back to you right away.
 			.col-md-8
 				.padded.no-padding-bottom
 					%form.form-horizontal
